@@ -1,0 +1,83 @@
+/*
+
+Page
+- page2
+
+Page h tags
+- page h1
+- page h2
+
+Shop offers
+- title page
+- button
+
+
+ */
+
+/***********************\
+ ** Header  **
+\***********************/
+
+.header_top {
+  padding: 16px 10%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/***********************\
+ ** Page h tags **
+\***********************/
+
+.page h1, .page h2 {
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.page h1 {
+  font-size: 2.5rem;
+}
+
+.page h2 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  white-space: nowrap;
+}
+
+/***********************\
+** Shop Offer **
+\***********************/
+
+.page4 {
+  min-height: 20vw;
+  background-image: url('../img/shop-offer.jpg');
+  background-size: cover;
+}
+
+.offer {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  text-align: left;
+}
+
+.offer h1 {
+  color: #fff;
+  letter-spacing: 0.25rem;
+}
+
+.offer h2 {
+  color: #f99d1c;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.offer a {
+  padding: 0.5rem 2rem;
+  color: #fff;
+  background-color: #f99d1c;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
