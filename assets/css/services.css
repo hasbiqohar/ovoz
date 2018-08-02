@@ -1,0 +1,101 @@
+
+/**
+  Index of services
+
+  Packages
+  - title page
+  - columns
+  - images
+  - title package
+  - includes package
+
+  Custom order
+  - title page
+  - button
+
+  */
+
+/***********************\
+  ** Packages **
+\***********************/
+
+.page2 {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.packages-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.package-column {
+  width: 32%;
+  min-height: 40vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-color: #ececec;
+}
+
+.package-column img {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+
+.package-column h2 {
+  margin: 5% auto 0;
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.package-column h3 {
+  margin: 0 auto 5%;
+  color: #f99d1c;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.package-column span {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: solid thin #e3e3e3;
+  line-height: 3;
+  text-transform: capitalize;
+}
+
+.package-column span:nth-last-child(2) {
+  margin-bottom: 20%;
+}
+
+/***********************\
+  ** Custom Order **
+\***********************/
+
+.page3 {
+  min-height: 35vw;
+}
+
+.custom-order-link {
+  min-width: 20vw;
+  width: auto;
+  margin: 2% auto 0;
+  padding: 1rem 3rem;
+  color: #fff;
+  background-color: #f99d1c;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

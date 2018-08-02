@@ -1,0 +1,75 @@
+/*
+
+Portfolio
+- page
+- columns
+- img
+
+  */
+
+/***********************\
+  ** Portfolio **
+\***********************/
+
+.page3 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  margin-bottom: 5%;
+  padding: 0;
+}
+
+.portfolio-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio li {
+  height: 25vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+  list-style: none outside;
+}
+
+.portfolio li:nth-child(9n+1),
+.portfolio li:nth-child(9n+2),
+.portfolio li:nth-child(9n+3),
+.portfolio li:nth-child(9n+4) {
+  width: 25%;
+}
+
+.portfolio li:nth-child(9n+5),
+.portfolio li:nth-child(9n+6),
+.portfolio li:nth-child(9n+7) {
+  width: 33.33333%;
+}
+
+.portfolio li:nth-child(9n+8),
+.portfolio li:nth-child(9n+9) {
+  width: 50%;
+}
+
+.portfolio img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+.portfolio img:hover {
+  width: 110%;
+  height: 110%;
+  margin: -5%;
+  object-fit: cover;
+}

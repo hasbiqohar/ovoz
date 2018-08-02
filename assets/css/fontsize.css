@@ -1,0 +1,153 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width : 600px) {
+  h1, h2, h3, h4, h5, h6, p, span, a, body {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width : 768px ) {
+  h1 {
+    font-size: 4.166666666666667vw;
+    line-height: 5.25vw;
+  }
+
+  h2 {
+    font-size: 3.125vw;
+    line-height: 4.25vw;
+  }
+
+  h3 {
+    font-size: 2.4739583333333335vw;
+    line-height: 3.5vw;
+  }
+
+  h4, p, span, a, body {
+    font-size: 2.0833333333333335vw;
+    line-height: 3vw;
+  }
+
+  h5 {
+    font-size: 1.6927083333333335vw;
+    line-height: 2.25vw;
+  }
+
+  h6 {
+    font-size: 1.4322916666666667vw;
+    line-height: 2vw;
+  }
+
+}
+
+@media screen and (min-width : 1024px ) {
+  h1 {
+    font-size: 3.125vw;
+    line-height: 4.125vw;
+  }
+
+  h2 {
+    font-size: 2.34375vw;
+    line-height: 2.25vw;
+  }
+
+  h3 {
+    font-size: 1.85546875vw;
+    line-height: 2.75vw;
+  }
+
+  h4, p, span, a, body {
+    font-size: 1.5625vw;
+    line-height: 2.5vw;
+  }
+
+  h5 {
+    font-size: 1.26953125vw;
+    line-height: 1.75vw;
+  }
+
+  h6 {
+    font-size: 1.07421875vw;
+    line-height: 1.5vw;
+  }
+
+}
+
+@media screen and (min-width : 1366px ) {
+  h1 {
+    font-size: 2.342606149341142vw;
+    line-height: 3.342606149341142vw;
+  }
+
+  h2 {
+    font-size: 1.7569546120058566vw;
+    line-height: 2.75vw;
+  }
+
+  h3 {
+    font-size: 1.390922401171303vw;
+    line-height: 2.25vw;
+  }
+
+  h4, p, span, a, body {
+    font-size: 1.171303074670571vw;
+    line-height: 1.75vw;
+  }
+
+  h5 {
+    font-size: 0.9516837481698389vw;
+    line-height: 1.5vw;
+  }
+
+  h6 {
+    font-size: 0.8052708638360175vw;
+    line-height: 1.5vw;
+  }
+
+}
+
+@media screen and (min-width : 1920px ) {
+  h1 {
+    font-size: 3.3333333333333335vw;
+    line-height: 4.3333333333333335vw;
+  }
+
+  h2 {
+    font-size: 1.25vw;
+    line-height: 2.25vw;
+  }
+
+  h3 {
+    font-size: 0.9895833333333334vw;
+    line-height: 2vw;
+  }
+
+  h4, p, span, a, body {
+    font-size: 0.8333333333333334vw;
+    line-height: 1.5vw;
+  }
+
+  h5 {
+    font-size: 0.6770833333333334vw;
+    line-height: 1.25vw;
+  }
+
+  h6 {
+    font-size: 0.5729166666666667vw;
+    line-height: 1.25vw;
+  }
+
+}
+
+@media screen and (max-width : 600px) {
+  h1, h2, h3, h4, h5, h6, p, span, a, body {
+    line-height: 1.5;
+  }
+}
