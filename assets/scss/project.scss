@@ -1,6 +1,108 @@
-$border: #858585;
 $primary: #f99d2c;
+$secondary: #858585;
+$border: #d5d5d5;
 
-input {
-  border: $border;
+$third: 100%/3.2;
+$third-offset: (100%-($third*3))/9;
+
+//mixin - form
+@mixin border-rad($radius) {
+  border-radius: $radius;
+  -ms-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+@mixin project-form() {
+  margin: 0.5rem 0px;
+  padding: 0.75rem 16px;
+  border: solid 1px $border;
+  @include border-rad(10px);
+}
+
+.page h1 {
+  font-size: 3rem;
+}
+
+form {
+  width: 50%;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  label {
+      width: 100%;
+      height: auto;
+      margin: 1rem 0px;
+      text-align: left;
+
+      h3 {
+        color: $secondary;
+        margin-left: 1rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+        color: $secondary;
+        margin-left: 1rem;
+      }
+
+      span {
+        font-size: 0.8rem;
+        color: $primary;
+      }
+
+      .project-attach,
+      input,
+      select,
+      textarea {
+        width: calc(100% - 32px);
+        font-size: 1rem;
+        @include project-form();
+
+        &:focus,
+        &:active {
+          outline: none;
+          border: solid thin $primary;
+        }
+
+        option {
+          outline: solid 2px $primary;
+          @include border-rad(5px);
+        }
+
+      }
+
+      select {
+        width: 100%;
+      }
+
+      #ProjectAttach {
+        display: none;
+      }
+
+      .project-attach {
+        width: $third;
+        margin: 1rem $third-offset;
+        padding: 2rem 0;
+        display: inline-block;
+        text-align: center;
+
+        i {
+          padding: 1rem;
+          color: $secondary;
+          border: solid thin $border;
+          @include border-rad(50%);
+          font-size: 4rem;
+          transform: rotate(45deg);
+        }
+
+        .add-attach {
+          transform: unset;
+        }
+
+      }
+  }
+
 }

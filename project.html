@@ -7,6 +7,7 @@
   <title>Our Services</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/lib/animate.css" />
   <link rel="stylesheet" href="assets/css/lib/hasbislider.css" />
@@ -49,55 +50,73 @@
 
   <div class="page2 page">
     <div class="we_do_text">
-      <h1>services</h1>
-      <h2>choose your packages</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      </p>
+      <h1>start your project</h1>
+      <h2>and submit a request here</h2>
     </div>
-    <div class="packages-container">
-      <div class="package-column">
-        <img src="assets/img/basic-package.jpg" />
-        <h2>basic</h2>
-        <h3>package</h3>
-        <span>Logo</span>
-        <span>Social Media</span>
-        <span>Revision</span>
-        <div style="width: 100%; height: 1px; margin: auto;"></div>
-      </div>
-      <div class="package-column">
-        <img src="assets/img/standard-package.jpg" />
-        <h2>standard</h2>
-        <h3>package</h3>
-        <span>Logo</span>
-        <span>Social Media</span>
-        <span>Intro Video</span>
-        <span>Revision</span>
-        <div style="width: 100%; height: 1px; margin: auto;"></div>
-      </div>
-      <div class="package-column">
-        <img src="assets/img/premium-package.jpg" />
-        <h2>premium</h2>
-        <h3>package</h3>
-        <span>Logo</span>
-        <span>Social Media</span>
-        <span>Intro Video</span>
-        <span>Licence</span>
-        <span>Revision</span>
-        <div style="width: 100%; height: 1px; margin: auto;"></div>
-      </div>
-    </div>
-  </div>
+    <form class="" action="thanks.html" method="post">
+      <label>
+        <h3>Your Email Address</h3>
+        <input type="text" name="project-email" value="">
+      </label>
 
-  <div class="page3 page">
-    <div class="we_sell_text">
-      <h1>custom order</h1>
-      <h2>write your request here</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      </p>
-    </div>
-    <a href="#" class="custom-order-link">start your project</a>
+      <label>
+        <h3>Subject</h3>
+        <input type="text" name="project-subject" value="">
+      </label>
+
+      <label>
+        <h3>Interest to purchase our package?</h3>
+        <select class="" name="package-choice">
+          <option value="basic">basic</option>
+          <option value="standard">standard</option>
+          <option value="premium">premium</option>
+        </select>
+        <p><span>We have an offer for you,</span> select what the right package from the drop-down above.</p>
+      </label>
+
+      <label>
+        <h3>What can we help you with?</h3>
+        <select class="" name="package-needed">
+          <option value="logo">logo</option>
+          <option value="video">video intro</option>
+          <option value="jersey">jersey</option>
+          <option value="social">social media</option>
+        </select>
+        <p><span>Select</span> what you need from the drop-down above.</p>
+      </label>
+
+      <label>
+        <h3>Budget</h3>
+        <input type="number" name="project-budget" value="">
+        <p>What is your <span>budget</span> for this project?</p>
+      </label>
+
+      <label>
+        <textarea name="project-desc" rows="8" cols="80"></textarea>
+        <p>
+          <span>Please enter</span>
+          The details of your request. A member of our support staff will respond as soon as possible
+        </p>
+      </label>
+
+      <label for="ProjectAttach">
+        <h3>Attachment</h3>
+        <div class="project-attach">
+          <i class="material-icons">attach_file</i>
+        </div>
+        <div class="project-attach">
+          <i class="material-icons">attach_file</i>
+        </div>
+        <div class="project-attach">
+          <i class="material-icons add-attach">add</i>
+        </div>
+        <input id="ProjectAttach" type="file" name="project-attach" value="">
+        <p>
+          <span>Add file or</span>
+          drag and drop here
+        </p>
+      </label>
+    </form>
   </div>
 
   <div class="page4 page">
