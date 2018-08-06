@@ -1,11 +1,8 @@
 $primary: #f99d2c;
 $secondary: #858585;
 $border: #d5d5d5;
-
 $third: 100%/3.2;
-$third-offset: (100%-($third*3))/9;
-
-//mixin - form
+$third-offset: (100%-($third*3))/9; //mixin - form
 @mixin border-rad($radius) {
   border-radius: $radius;
   -ms-border-radius: $radius;
@@ -14,10 +11,28 @@ $third-offset: (100%-($third*3))/9;
   -webkit-border-radius: $radius;
 }
 @mixin project-form() {
-  margin: 0.5rem 0px;
+  margin: 0.5rem 0;
   padding: 0.75rem 16px;
   border: solid 1px $border;
   @include border-rad(10px);
+}
+@mixin input-text($color) {
+  &::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $secondary;
+    opacity: 1;
+    /* Firefox */
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $secondary;
+  }
+
+  &::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $secondary;
+  }
 }
 
 .page h1 {
@@ -32,77 +47,119 @@ form {
   flex-wrap: wrap;
 
   label {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    text-align: left;
+
+    h3 {
+      color: $secondary;
+      margin-left: 1rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      color: $secondary;
+      margin-left: 1rem;
+    }
+
+    span {
+      font-size: 0.8rem;
+      color: $primary;
+    }
+
+    .checkout-total,
+    .project-attach,
+    input,
+    select,
+    textarea {
+      width: calc(100% - 32px);
+      font-size: 1rem;
+      @include project-form();
+      @include input-text($secondary);
+      color: $secondary;
+
+      &:active,
+      &:focus {
+        outline: none;
+        border: solid thin $primary;
+      }
+
+      option {
+        outline: solid 2px $primary;
+        @include border-rad(5px);
+
+      }
+    }
+
+    select {
       width: 100%;
-      height: auto;
-      margin: 1rem 0px;
-      text-align: left;
+    }
 
-      h3 {
+    #ProjectAttach {
+      display: none;
+    }
+
+    .project-attach {
+      width: $third;
+      margin: 1rem $third-offset;
+      padding: 2rem 0;
+      display: inline-block;
+      text-align: center;
+
+      i {
+        padding: 1rem;
         color: $secondary;
-        margin-left: 1rem;
+        border: solid thin $border;
+        @include border-rad(50%);
+        font-size: 4rem;
+        transform: rotate(45deg);
       }
 
-      p {
-        font-size: 0.8rem;
-        color: $secondary;
-        margin-left: 1rem;
+      .add-attach {
+        transform: unset;
       }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .checkout-items {
+      width: $third;
+      min-height: 12vw;
+      height: 12vw;
+      padding: 0;
+      display: flex;
+      float: left;
+      flex-wrap: wrap;
+      overflow: hidden;
+
+      i {
+        margin: auto;
+      }
+    }
+
+    .checkout-total {
+      text-align: center;
 
       span {
-        font-size: 0.8rem;
-        color: $primary;
+        font-size: 100%;
       }
+    }
+  }
 
-      .project-attach,
-      input,
-      select,
-      textarea {
-        width: calc(100% - 32px);
-        font-size: 1rem;
-        @include project-form();
-
-        &:focus,
-        &:active {
-          outline: none;
-          border: solid thin $primary;
-        }
-
-        option {
-          outline: solid 2px $primary;
-          @include border-rad(5px);
-        }
-
-      }
-
-      select {
-        width: 100%;
-      }
-
-      #ProjectAttach {
-        display: none;
-      }
-
-      .project-attach {
-        width: $third;
-        margin: 1rem $third-offset;
-        padding: 2rem 0;
-        display: inline-block;
-        text-align: center;
-
-        i {
-          padding: 1rem;
-          color: $secondary;
-          border: solid thin $border;
-          @include border-rad(50%);
-          font-size: 4rem;
-          transform: rotate(45deg);
-        }
-
-        .add-attach {
-          transform: unset;
-        }
-
-      }
+  .checkout-paypal {
+    img {
+      width: 15%;
+      margin-top: 1rem;
+      padding: 2% 10%;
+      background-color: #469ada;
+      object-fit: cover;
+      @include border-rad(10px);
+    }
   }
 
 }

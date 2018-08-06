@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services</title>
+  <title>Checkout Now</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/lib/animate.css" />
   <link rel="stylesheet" href="assets/css/lib/hasbislider.css" />
@@ -17,6 +18,7 @@
   <link rel="stylesheet" href="assets/css/landingpage.css" />
   <link rel="stylesheet" href="assets/css/services.css" />
   <link rel="stylesheet" href="assets/css/pages.css" />
+  <link rel="stylesheet" href="assets/css/project.css" />
 </head>
 
 <body>
@@ -48,62 +50,70 @@
 
   <div class="page2 page">
     <div class="we_do_text">
-      <h1>services</h1>
-      <h2>choose your packages</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      </p>
+      <h1>review your item</h1>
+      <h2>review your order before you confirm your payment</h2>
     </div>
-    <div class="packages-container">
-      <div class="package-column">
-        <img src="assets/img/basic-package.jpg" />
-        <h2>basic</h2>
-        <h3>package</h3>
-        <span>Logo</span>
-        <span>Social Media</span>
-        <span>Revision</span>
-        <div style="width: 100%; height: 1px; margin: auto;"></div>
-      </div>
-      <div class="package-column">
-        <img src="assets/img/standard-package.jpg" />
-        <h2>standard</h2>
-        <h3>package</h3>
-        <span>Logo</span>
-        <span>Social Media</span>
-        <span>Intro Video</span>
-        <span>Revision</span>
-        <div style="width: 100%; height: 1px; margin: auto;"></div>
-      </div>
-      <div class="package-column">
-        <img src="assets/img/premium-package.jpg" />
-        <h2>premium</h2>
-        <h3>package</h3>
-        <span>Logo</span>
-        <span>Social Media</span>
-        <span>Intro Video</span>
-        <span>Licence</span>
-        <span>Revision</span>
-        <div style="width: 100%; height: 1px; margin: auto;"></div>
-      </div>
-    </div>
-  </div>
+    <form class="" action="thanks.html" method="post">
 
-  <div class="page3 page">
-    <div class="we_sell_text">
-      <h1>custom order</h1>
-      <h2>write your request here</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      </p>
-    </div>
-    <a href="project.html" class="custom-order-link">start your project</a>
+      <label>
+        <h3>Item</h3>
+        <div class="project-attach checkout-items">
+          <img src="assets/img/baby-devil.jpg" alt="baby-devil">
+        </div>
+        <div class="project-attach checkout-items">
+          <img src="assets/img/hockey.jpg" alt="hockey">
+        </div>
+        <div class="project-attach checkout-items">
+          <i class="material-icons add-attach">add</i>
+        </div>
+      </label>
+
+      <label>
+        <div class="checkout-total">
+          <h3>Total prices : <span>$100</span></h3>
+          <p><span>Total prices</span> you should to purchase is $100</p>
+        </div>
+      </label>
+
+      <label>
+        <h3>Your Name</h3>
+        <input type="text" name="checkout-name" value="">
+      </label>
+
+      <label>
+        <h3>Your Email Address</h3>
+        <input type="text" name="checkout-email" value="">
+      </label>
+
+      <label>
+        <h3>Phone</h3>
+        <input type="text" name="checkout-phone" value="">
+      </label>
+
+      <label>
+        <h3>Country</h3>
+        <select class="" name="checkout-country">
+          <option value="indonesia">Indonesia</option>
+          <option value="malaysia">Malaysia</option>
+          <option value="rusia">Rusia</option>
+        </select>
+      </label>
+
+      <label class="checkout-paypal">
+        <h3>Payment Method</h3>
+        <div class="">
+          <img src="assets/img/paypal.png" alt="">
+          <input type="submit" name="" value="Paypal" style="display: none;">
+        </div>
+      </label>
+    </form>
   </div>
 
   <div class="page4 page">
     <div class="offer">
-      <h1>dont have a time?</h1>
-      <h2>check our premade product!</h2>
-      <a href="shop.html">shop</a>
+      <h1>need custom logo?</h1>
+      <h2>check our services offer!</h2>
+      <a href="services.html">services</a>
     </div>
   </div>
 

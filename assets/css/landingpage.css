@@ -85,17 +85,17 @@
     color: #eee;
     text-transform: uppercase;
     font-weight: 800;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
-    text-shadow:
+    /* text-shadow:
     -2px -2px 0 #f99d1c,
     2px -2px 0 #f99d1c,
     -2px 2px 0 #f99d1c,
-    2px 2px 0 #f99d1c;
+    2px 2px 0 #f99d1c; */
 }
 
 .we_do_picture>div:hover>h1 {
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
